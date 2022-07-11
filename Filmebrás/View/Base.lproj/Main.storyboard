@@ -12,7 +12,7 @@
         <!--Featured-->
         <scene sceneID="T3F-aX-Rg0">
             <objects>
-                <viewController title="Featured" id="ZUg-cJ-IzH" sceneMemberID="viewController">
+                <viewController title="Featured" id="ZUg-cJ-IzH" customClass="FeaturedViewController" customModule="Filmebra_s" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="shx-HN-OGE">
                         <rect key="frame" x="0.0" y="0.0" width="413" height="1341"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
                                                             <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4EJ-U7-tTa">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="popularCell" id="4EJ-U7-tTa" customClass="PopularCollectionViewCell" customModule="Filmebra_s" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="0.0" width="200" height="140"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="v9i-oH-Ruf">
@@ -95,6 +95,10 @@
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
                                                                 <size key="customSize" width="200" height="140"/>
+                                                                <connections>
+                                                                    <outlet property="image" destination="9nJ-Q2-w1s" id="7C9-eq-QEA"/>
+                                                                    <outlet property="titleLabel" destination="YYt-hn-HKe" id="Gqz-jX-jea"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -144,7 +148,7 @@
                                                             <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ES3-xh-nnO">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ES3-xh-nnO" customClass="NowPlayingCollectionViewCell" customModule="Filmebra_s" customModuleProvider="target">
                                                                 <rect key="frame" x="16" y="0.0" width="251" height="114"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RHr-iu-SfI">
@@ -185,6 +189,11 @@
                                                                         <constraint firstAttribute="trailing" secondItem="vJj-tx-NSi" secondAttribute="trailing" id="ydE-M2-Sw1"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="dateLabel" destination="1Ee-r5-oOy" id="LHG-cS-dST"/>
+                                                                    <outlet property="image" destination="pNu-h2-Aw9" id="at7-jl-hPu"/>
+                                                                    <outlet property="titleLabel" destination="FnU-Jm-ahF" id="kE4-gQ-cnL"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -303,6 +312,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Featured" id="Ljm-eX-l39"/>
                     <size key="freeformSize" width="413" height="1341"/>
+                    <connections>
+                        <outlet property="nowPlayingCollectionView" destination="6Ib-Te-4ZA" id="o4j-LS-6em"/>
+                        <outlet property="popularCollectionView" destination="vol-lG-LdG" id="Bva-fz-z46"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSg-a8-GAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
