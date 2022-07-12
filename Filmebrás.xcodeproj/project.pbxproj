@@ -13,6 +13,12 @@
 		6E4669322874B08300624DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4669302874B08300624DD7 /* Main.storyboard */; };
 		6E4669342874B08600624DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4669332874B08600624DD7 /* Assets.xcassets */; };
 		6E4669372874B08700624DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4669352874B08700624DD7 /* LaunchScreen.storyboard */; };
+		6EA057FE287DEE00003F3F4A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA057FD287DEE00003F3F4A /* Movie.swift */; };
+		6EA058DA287DF5C4003F3F4A /* Movie+NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA058D5287DF5C4003F3F4A /* Movie+NowPlaying.swift */; };
+		6EA058DB287DF5C4003F3F4A /* Movie+TrendingToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA058D6287DF5C4003F3F4A /* Movie+TrendingToday.swift */; };
+		6EA058DC287DF5C4003F3F4A /* Movie+Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA058D7287DF5C4003F3F4A /* Movie+Upcoming.swift */; };
+		6EA058DD287DF5C4003F3F4A /* Movie+Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA058D8287DF5C4003F3F4A /* Movie+Popular.swift */; };
+		6EA058DE287DF5C4003F3F4A /* Movie+TrendingThisWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA058D9287DF5C4003F3F4A /* Movie+TrendingThisWeek.swift */; };
 		6EDCE4F9287C980800D9E746 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDCE4F8287C980800D9E746 /* PopularCollectionViewCell.swift */; };
 		6EDCE4FC287C9AA000D9E746 /* NowPlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDCE4FB287C9AA000D9E746 /* NowPlayingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +32,12 @@
 		6E4669332874B08600624DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E4669362874B08700624DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E4669382874B08700624DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EA057FD287DEE00003F3F4A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		6EA058D5287DF5C4003F3F4A /* Movie+NowPlaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+NowPlaying.swift"; sourceTree = "<group>"; };
+		6EA058D6287DF5C4003F3F4A /* Movie+TrendingToday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingToday.swift"; sourceTree = "<group>"; };
+		6EA058D7287DF5C4003F3F4A /* Movie+Upcoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Upcoming.swift"; sourceTree = "<group>"; };
+		6EA058D8287DF5C4003F3F4A /* Movie+Popular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Popular.swift"; sourceTree = "<group>"; };
+		6EA058D9287DF5C4003F3F4A /* Movie+TrendingThisWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingThisWeek.swift"; sourceTree = "<group>"; };
 		6EDCE4F8287C980800D9E746 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		6EDCE4FB287C9AA000D9E746 /* NowPlayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,20 +74,34 @@
 			children = (
 				6E46692A2874B08300624DD7 /* AppDelegate.swift */,
 				6E46692C2874B08300624DD7 /* SceneDelegate.swift */,
+				6EA057FC287DEDE7003F3F4A /* Models */,
 				6EDCE4FD287C9AD500D9E746 /* View */,
-				6EDCE4FA287C990400D9E746 /* New Group */,
+				6EDCE4FA287C990400D9E746 /* Controllers */,
 				6EDCE4FE287C9E1700D9E746 /* SupportingFiles */,
 			);
 			name = "Filmebrás";
 			path = "Filmebrás";
 			sourceTree = "<group>";
 		};
-		6EDCE4FA287C990400D9E746 /* New Group */ = {
+		6EA057FC287DEDE7003F3F4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6EA058D5287DF5C4003F3F4A /* Movie+NowPlaying.swift */,
+				6EA058D8287DF5C4003F3F4A /* Movie+Popular.swift */,
+				6EA058D9287DF5C4003F3F4A /* Movie+TrendingThisWeek.swift */,
+				6EA058D6287DF5C4003F3F4A /* Movie+TrendingToday.swift */,
+				6EA058D7287DF5C4003F3F4A /* Movie+Upcoming.swift */,
+				6EA057FD287DEE00003F3F4A /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6EDCE4FA287C990400D9E746 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				6E46692E2874B08300624DD7 /* FeaturedViewController.swift */,
 			);
-			path = "New Group";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		6EDCE4FD287C9AD500D9E746 /* View */ = {
@@ -170,9 +196,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EDCE4FC287C9AA000D9E746 /* NowPlayingCollectionViewCell.swift in Sources */,
+				6EA058DE287DF5C4003F3F4A /* Movie+TrendingThisWeek.swift in Sources */,
+				6EA057FE287DEE00003F3F4A /* Movie.swift in Sources */,
 				6EDCE4F9287C980800D9E746 /* PopularCollectionViewCell.swift in Sources */,
+				6EA058DB287DF5C4003F3F4A /* Movie+TrendingToday.swift in Sources */,
 				6E46692F2874B08300624DD7 /* FeaturedViewController.swift in Sources */,
 				6E46692B2874B08300624DD7 /* AppDelegate.swift in Sources */,
+				6EA058DD287DF5C4003F3F4A /* Movie+Popular.swift in Sources */,
+				6EA058DA287DF5C4003F3F4A /* Movie+NowPlaying.swift in Sources */,
+				6EA058DC287DF5C4003F3F4A /* Movie+Upcoming.swift in Sources */,
 				6E46692D2874B08300624DD7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
